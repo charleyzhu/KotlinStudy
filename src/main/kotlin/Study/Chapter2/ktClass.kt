@@ -36,6 +36,10 @@ open class User (var name:String)
     open fun say(msg:Any){ //可以被重写的方法也需要加上open关键字
         println("$name Say:$msg")
     }
+
+    override fun toString(): String { //重写方法
+        return "User:$name"
+    }
 }
 
 class AndroidUser(name: String,var password: String,var Drv:String): User(name,password) {
