@@ -1,4 +1,4 @@
-package Study
+package Study.Chapter2
 
 import FastKotlin.day1.tkUser as day1User
 import FastKotlin.day2.tkUser as day2User

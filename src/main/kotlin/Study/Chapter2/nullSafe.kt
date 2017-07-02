@@ -1,4 +1,4 @@
-package Study
+package Study.Chapter2
 
 //正常返回
 fun GetUserName():String {
@@ -23,7 +23,7 @@ fun main(args: Array<String>) {
     var charleyPasswd:String? = "123456"
     println(charleyPasswd!!.length)//!!表示强制确认这个charleyPasswd这个变量不会是null
 
-    val ddPasswod = GetPassword()?: return //这里和oc里面的写法很相似
+    val ddPasswod = GetPassword() ?: return //这里和oc里面的写法很相似
     println(ddPasswod)
 
 }

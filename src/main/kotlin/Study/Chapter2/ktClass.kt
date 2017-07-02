@@ -1,7 +1,4 @@
-package Study
-
-import sun.rmi.runtime.Log
-import java.util.logging.Logger
+package Study.Chapter2
 
 class AClass(var name:String) {
 
@@ -41,7 +38,7 @@ open class User (var name:String)
     }
 }
 
-class AndroidUser(name: String,var password: String,var Drv:String):User(name,password) {
+class AndroidUser(name: String,var password: String,var Drv:String): User(name,password) {
     init {
         println("Android init")
     }
@@ -50,7 +47,7 @@ class AndroidUser(name: String,var password: String,var Drv:String):User(name,pa
 
 }
 
-class iOSUser(name: String,var password: String,var iosVersion:String):User(name) {
+class iOSUser(name: String,var password: String,var iosVersion:String): User(name) {
     init {
         println("iOS init")
     }
@@ -62,10 +59,10 @@ class iOSUser(name: String,var password: String,var iosVersion:String):User(name
 }
 
 fun main(args: Array<String>) {
-    val xiaomiUser = AndroidUser("djcash","123456","xiaomiNote")
+    val xiaomiUser = AndroidUser("djcash", "123456", "xiaomiNote")
     xiaomiUser.say("my Drv:${xiaomiUser.Drv}")
 
-    var iosUser = iOSUser("charley","456789","7.1.1")
+    var iosUser = iOSUser("charley", "456789", "7.1.1")
     iosUser.say("my Version: ${iosUser.iosVersion}")
 
 }

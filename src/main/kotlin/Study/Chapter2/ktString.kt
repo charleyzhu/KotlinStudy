@@ -1,4 +1,4 @@
-package Study
+package Study.Chapter2
 
 var string:String = "HelloWorld"
 val arrChar:String = String(charArrayOf('a','b','c','d'))
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     println(string === copyString)//是否是同一个对象
     //字符串模板
 
-    println("用字符串模板say:$string")
+    println("用字符串模板say:${string}")
 
     val aInt:Int = 4
     val bInt:Int = 5
@@ -23,15 +23,15 @@ fun main(args: Array<String>) {
 //    比如输出 hello "Trump"
     println("Hello \"Trumo\"")
     //转义符 $
-    println("hello $arrChar and hellp\$arrChar")
+    println("hello ${arrChar} and hellp\$arrChar")
 
     ///原始字符串
     val rawString = """
     🙃
     呵呵
     哈哈
-    $string
-    /$string
+    ${string}
+    /${string}
     $ string
     """
     println(rawString)

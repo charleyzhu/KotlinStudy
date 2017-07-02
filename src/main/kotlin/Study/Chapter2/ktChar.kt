@@ -1,4 +1,4 @@
-package Study
+package Study.Chapter2
 
 val aChar = 'A'
 val bChar = '0'
